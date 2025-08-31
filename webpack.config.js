@@ -25,6 +25,8 @@ module.exports = {
     publicPath: '/dist/',
     compress: true,
     port: 3000,
+    hot: true, // Enable hot module replacement
+    headers: { 'X-Content-Type-Options': 'nosniff' }, // Security header
   },
   resolve: {
     extensions: ['.js', '.jsx'],
