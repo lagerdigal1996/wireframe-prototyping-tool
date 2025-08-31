@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.js$/,
+        test: /\.js$/, // Escaped dot to accurately match file extensions
         exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
