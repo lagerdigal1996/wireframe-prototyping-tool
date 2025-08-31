@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, // Escaped dot to accurately match file extensions
+        test: /.js$/, 
         exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
@@ -25,8 +25,8 @@ module.exports = {
     publicPath: '/dist/',
     compress: true,
     port: 3000,
-    hot: true, // Enable hot module replacement
-    headers: { 'X-Content-Type-Options': 'nosniff' }, // Security header
+    hot: true,
+    headers: { 'X-Content-Type-Options': 'nosniff' },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
