@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, 
+        test: /.jsx?$/, 
         exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
@@ -26,6 +26,7 @@ module.exports = {
     port: 3000,
     hot: true,
     headers: { 'X-Content-Type-Options': 'nosniff' },
+    watchFiles: ['src/**/*'],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
